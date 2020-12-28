@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Travel Blog</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="photoblog">Travel Blog</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="likes">Likes</string>
+    <string name="like">Like</string>
+    <string name="error_weak_password">The password is weak</string>
+    <string name="error_user_exists">Email Already Exists</string>
+    <string name="error_invalid_email">Invalid Creedentials</string>
+    <string name="search">Search</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="logout">Logout</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in_reg">Sign in</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="save">Save Changes</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="write_your_blog_here">Write your blog here</string>
+    <string name="s">SAVE</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="select">Select</string>
+    <string name="image">Image</string>
+    <string name="blog_title">Blog Title</string>
+    <string name="p">Post</string>
+    <string name="imagename">Image name</string>
+    <string name="add_images">Add Images</string>
+    <string name="post">POST</string>
+    <string name="account">Account</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="refresh">Refresh</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="username_liked_your_blog">Username liked your Blog</string>
+    <string name="dont_have_an_account">Dont have an Account?</string>
+</resources>

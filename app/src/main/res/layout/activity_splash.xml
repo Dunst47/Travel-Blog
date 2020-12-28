@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SplashActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b500acc1">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            android:id="@+id/loginprogbar"
+            />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon"
+            android:id="@+id/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/photoblog"
+            android:textSize="45sp"
+            android:id="@+id/slo"
+            android:textColor="#000000"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:enabled="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

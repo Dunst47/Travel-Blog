@@ -1,0 +1,20 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="300dp"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_margin="10dp"
+    >
+    <ImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image" />
+
+    <CheckBox
+        android:id="@+id/chkImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"/>
+    
+</androidx.cardview.widget.CardView>

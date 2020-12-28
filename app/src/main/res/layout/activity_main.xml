@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_list">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:background="@drawable/a"
+        android:id="@+id/toolbarMain"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:elevation="5dp"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        app:backgroundTintMode="src_in"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/addd"
+        android:src="@drawable/ic_action_add" />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout"
+        android:layout_below="@id/toolbarMain"
+        app:tabIndicatorGravity="stretch"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorColor="#cb007c91"
+        app:tabIndicator="@drawable/v"
+        app:tabIndicatorHeight="5dp"
+        android:background="@drawable/as"
+        />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_below="@id/tabLayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:id="@+id/viewPager"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_viewss"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"/>
+</androidx.drawerlayout.widget.DrawerLayout>

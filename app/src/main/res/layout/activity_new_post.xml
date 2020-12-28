@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbarNewPost"
+        android:elevation="4dp"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:id="@+id/newPostprogbar"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/add_images"
+        android:elevation="5dp"
+        android:focusable="true"
+        app:backgroundTintMode="src_in"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/addd"
+        android:src="@drawable/iconze" />
+    <Button
+    android:id="@+id/postBlog"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/add_images"
+    android:elevation="5dp"
+    android:focusable="true"
+        android:text="@string/post"
+        android:textColor="@android:color/black"
+    app:backgroundTintMode="src_in"
+    android:layout_margin="16dp"
+    android:background="@drawable/btn"
+    />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbarNewPost"
+        android:layout_height="wrap_content" android:id="@+id/scro"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnrImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#20007c91"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:layout_gravity="center"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:id="@+id/imagesRecyclerView"
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/lnrImages">
+        <ImageView
+            android:id="@+id/blogPic"
+            android:layout_marginTop="20dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/samsing"
+            android:layout_gravity="center"
+            android:background="#aaaaaa"
+            android:contentDescription="@string/add_picture" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutTitle"
+        android:layout_margin="20dp">
+        <EditText
+            android:hint="@string/blog_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/blog_title"
+            android:padding="10dp"
+            android:background="@drawable/eddit"
+            android:autofillHints=""
+            android:inputType="text" />
+    </LinearLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_below="@id/linearLayoutTitle"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrolls"
+        >
+
+    <com.dunsthaze.mrblog.LineEditText
+        android:id="@+id/edit_story"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/eddit"
+        android:padding="10dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:minLines="10"
+        android:singleLine="false"
+        android:imeOptions="actionNone"
+        android:hint="@string/write_your_blog_here"
+        />
+
+    </ScrollView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

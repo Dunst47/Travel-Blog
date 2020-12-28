@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "174968152963",
+    "firebase_url": "https://mrblog-fefc4.firebaseio.com",
+    "project_id": "mrblog-fefc4",
+    "storage_bucket": "mrblog-fefc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174968152963:android:3187b28361ff524a138cb6",
+        "android_client_info": {
+          "package_name": "com.dunsthaze.mrblog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174968152963-419r5a0qb0i9mqglc7ef3beu4kh5abh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkeS99TW4wu48zDCcx08nrwyxa2vj38ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174968152963-419r5a0qb0i9mqglc7ef3beu4kh5abh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
